@@ -1,0 +1,148 @@
+.leftOne {
+  background-color: #fbf8bc;
+  border-radius: 30px;
+  // height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2% 10%;
+  width: 96%;
+}
+
+.rightTwo {
+  background-color: #fbf8bc;
+  border-radius: 30px;
+  height: 896px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  margin-top: 2%;
+}
+.rightTwoTexts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  font-size: 24px;
+}
+
+.mainWrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 1000px;
+}
+
+.heading {
+  margin-top: 2px;
+  // width: 70%;
+}
+
+.headingWrapper {
+  // display: flex;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.textWrapper {
+  // padding-left: 10%;
+  // padding-right: 10%;
+  text-align: center;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  padding-bottom: 3%;
+}
+
+.leftTwo {
+  background-color: #bee4fc;
+  border-radius: 20px;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10% 6%;
+  width: 96%;
+}
+
+// .headingTwo {
+//   padding: 10%;
+//   padding-top: 10%;
+// }
+
+.buttonTwo {
+  display: flex;
+  justify-content: end;
+  // border: 1px solid black;
+
+  width: 95%;
+  padding-bottom: 2%;
+}
+
+.twoBtn {
+  border-radius: 20px;
+  background-color: #bee4fc;
+  padding: 1%;
+  border-color: darkblue;
+}
+
+.contentImage {
+  width: 100%;
+  border-radius: 27px;
+}
+
+.contentImg {
+  // width: 420px;
+}
+
+@media (min-width: 1440px) {
+  .leftOne {
+    height: 71.5%;
+  }
+  .leftTwo {
+    height: 27.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .textWrapper {
+    h5 {
+      font-size: 19px;
+    }
+  }
+  .headingTwo {
+    h1 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+  .leftTwo {
+    height: 220px;
+  }
+  .rightTwoTexts {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentImg {
+    img {
+      width: 97%;
+    }
+  }
+  .leftTwo,
+  .leftOne,
+  .rightTwo {
+    margin: 0px;
+    border-radius: 0px;
+    width: 100%;
+    // padding: 0px;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../../variables.scss";
+
+$heroColor: #bee4fc;
+
+.containers {
+  background-color: $heroColor;
+  width: 99% !important;
+  max-width: 99% !important;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2%;
+  height: 405px;
+  border-radius: 30px;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  align-items: center;
+}
+
+.smallText {
+  color: $color;
+  word-wrap: break-word;
+}
+
+.heroButton {
+  background-color: #200058;
+  border-color: #200058;
+  border-radius: 30px;
+}
+
+.btntext {
+  color: $heroColor;
+}
+
+.img {
+  width: 80%;
+  border: 1px solid black;
+  margin-top: 10%;
+}
+
+.imgContainer {
+  width: 350px;
+}

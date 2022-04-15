@@ -1,0 +1,31 @@
+@import "./../../../variables.scss";
+
+.headerImage {
+  width: 25%;
+  // height: "2%";
+}
+.image {
+  object-fit: contain;
+}
+.headerContainer {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 1%;
+  // border: 1px solid black;
+}
+.headerRow {
+  display: flex !important;
+  // flex-direction: row !important;
+  justify-content: space-between;
+}
+
+.headerLinks {
+  display: flex;
+  // border: 1px solid black;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.linkColors {
+  color: $color;
+}

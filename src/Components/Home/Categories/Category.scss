@@ -1,0 +1,54 @@
+.mainContainer {
+  // width: 150px;
+  // height: 150px;
+  height: 40%;
+  background-color: #bee4fc;
+  // margin-top: 4%;
+  border-radius: 15px;
+}
+
+.cardImage {
+  // width: 125px;
+  margin: auto;
+}
+
+.image {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    width: 15% !important;
+    margin: 0.8%;
+  }
+}
+
+@media (max-width: 520px) {
+  .mainContainer {
+    margin: 2%;
+    width: 45% !important;
+  }
+}
+
+@media (width: 768px) {
+  .cardImage {
+    width: 95px;
+    margin: auto;
+  }
+  .mainContainer {
+    // width: 150px;
+    height: 120px;
+    background-color: #bee4fc;
+    // margin-top: 4%;
+    border-radius: 15px;
+  }
+}
+
+.buttonHome {
+  background-color: white;
+  border-color: darkblue;
+  border-radius: 20px;
+  // padding: 1%;
+  width: 150px;
+  height: 40px;
+}
