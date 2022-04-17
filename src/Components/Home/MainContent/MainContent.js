@@ -6,7 +6,7 @@ const MainContent = () => {
   return (
     <div className="container mainWrapper">
       <div className="row">
-        <div className="col-md-6 col-12">
+        <div className="col-lg-6 col-md-12 col-12">
           <div className="leftOne">
             <div className="headingWrapper">
               <h1 className="heading">
@@ -46,7 +46,7 @@ const MainContent = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-6 col-12">
+        <div className="col-lg-6 col-md-12 col-12">
           <div className="contentImg">
             <img src={ContentImage} className="contentImage" />
           </div>

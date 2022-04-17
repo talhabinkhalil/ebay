@@ -1,22 +1,24 @@
 import React from "react";
 import "./Hero.scss";
-import HeroImage from "../../../assets/images/donation.jpg";
+import HeroImage from "../../../assets/images/donation.png";
 
 const Hero = () => {
   return (
-    <div className="containers">
-      <div className="contentContainer">
-        <div>
-          <h1>
-            Deine Spende Fur <br /> Ukrain Innen
-          </h1>
-          <p className="smallText">Spende Von Zuhan Oder ebay</p>
-          <br />
-          <button className="heroButton">
-            <h4 className="btntext">Jetzet Spendin</h4>
-          </button>
+    <div className="container heroContent">
+      <div className="row">
+        <div className="col-md-7 col-6">
+          <div className="sideContent">
+            <div>
+              <h1>
+                Deine Spende Fur <br /> Ukrain Innen
+              </h1>
+              <p className="smallText">Spende Von Zuhan Oder ebay</p>
+              <br />
+              <button className="heroButton btntext">Jetzet Spendin</button>
+            </div>
+          </div>
         </div>
-        <div className="imgContainer">
+        <div className="imgContainer col-md-4 col-6">
           <img src={HeroImage} className="img" />
         </div>
       </div>
@@ -24,4 +26,6 @@ const Hero = () => {
   );
 };
 
+// containers
+// contentContainer
 export default Hero;

@@ -4,9 +4,9 @@ import CatImage from "../../../assets/images/cloth.png";
 
 const Category = (props) => {
   return (
-    <div className="col-sm-2 col-6 col-xl-2 mainContainer">
-      <div>
-        <h3>{props.name}</h3>
+    <div className=" col-md-4 col-lg-2 col-6 mainContainer">
+      <div className="cardContent">
+        <p>{props.name}</p>
         <div className="cardImage">
           <img src={CatImage} className="image" />
         </div>

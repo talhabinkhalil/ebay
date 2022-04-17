@@ -9,36 +9,41 @@ import {
   Offcanvas,
   Row,
 } from "react-bootstrap";
+import Menu from "../../../assets/images/menu.png";
+import useIsMobileScreen from "../../../hooks/useCheckDevice";
 
 const Header = () => {
+  const isMobile = useIsMobileScreen();
   return (
     <div fluid className="headerContainer">
       <div className="headerRow">
         <div>
           <img src={Logo} className="headerImage" />
         </div>
-        <div className="headerLinks">
-          <h3 className="linkColors">Spendlist</h3>
-          <h3 className="linkColors">FAQ</h3>
+        {!isMobile && (
+          <div className="headerLinks">
+            <h3 className="linkColors">Spendlist</h3>
+            <h3 className="linkColors">FAQ</h3>
+          </div>
+        )}
+        {isMobile && (
           <div>
-            <button
-              className="btn btn-primary"
-              type="button"
+            <img
+              src={Menu}
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasRight"
               aria-controls="offcanvasRight"
-            >
-              Toggle right offcanvas
-            </button>
+            />
 
             <div
               class="offcanvas offcanvas-end"
               tabindex="-1"
               id="offcanvasRight"
+              style={{ width: "100%" }}
               aria-labelledby="offcanvasRightLabel"
             >
               <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                <h5 id="offcanvasRightLabel"></h5>
                 <button
                   type="button"
                   class="btn-close text-reset"
@@ -47,47 +52,12 @@ const Header = () => {
                 ></button>
               </div>
               <div class="offcanvas-body">
-                .
-                <div
-                  class="offcanvas offcanvas-end"
-                  tabindex="-1"
-                  id="offcanvasRight"
-                  aria-labelledby="offcanvasRightLabel"
-                >
-                  <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                    <button
-                      type="button"
-                      class="btn-close text-reset"
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="offcanvas-body">...</div>
-                </div>
-                ..
+                <h3 className="linkColors">Spendlist</h3>
+                <h3 className="linkColors">FAQ</h3>
               </div>
-            </div>
-
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">...</div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

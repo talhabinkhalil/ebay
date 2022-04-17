@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../SharedComponents/Header/Header";
 import Category from "./Categories/Category";
+import Footer from "./Footer/Footer";
 import Hero from "./Hero/Hero";
 import "./Home.scss";
 import MainContent from "./MainContent/MainContent";
@@ -33,11 +34,11 @@ const Home = () => {
     },
   ];
   return (
-    <React.Fragment>
+    <>
       <div className="homeContainer">
         <Header />
         <Hero />
-        <div className=" cards">
+        <div className="container-fluid cards">
           <div className="row">
             {data.map((d) => (
               <Category name={d.name} image={d.image} />
@@ -53,7 +54,9 @@ const Home = () => {
           <MainContent />
         </div>
       </div>
-    </React.Fragment>
+      <hr className="horizontalLine" />
+      <Footer />
+    </>
   );
 };
 

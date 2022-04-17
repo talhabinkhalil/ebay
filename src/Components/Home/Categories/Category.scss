@@ -16,10 +16,11 @@
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .mainContainer {
-    width: 15% !important;
-    margin: 0.8%;
+    // width: 15% !important;
+    margin: 0.4%;
+    width: 15.8% !important;
   }
 }
 
@@ -32,15 +33,16 @@
 
 @media (width: 768px) {
   .cardImage {
-    width: 95px;
+    width: 80%;
     margin: auto;
   }
+
   .mainContainer {
-    // width: 150px;
-    height: 120px;
     background-color: #bee4fc;
-    // margin-top: 4%;
     border-radius: 15px;
+    margin: 1%;
+    width: 31% !important;
+    height: 159px;
   }
 }
 
@@ -51,4 +53,16 @@
   // padding: 1%;
   width: 150px;
   height: 40px;
+}
+
+.cardContent {
+  font-size: 20px;
+  padding: 15px;
+}
+
+@media (width: 768px) {
+  .cardContent {
+    font-size: 20px;
+    padding: 0px;
+  }
 }
