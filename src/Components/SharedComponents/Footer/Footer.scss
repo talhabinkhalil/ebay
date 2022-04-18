@@ -1,0 +1,33 @@
+.footerText {
+  //  width: "70%", textAlign: "justify"
+  width: 70%;
+  text-align: justify;
+}
+.footerLeft {
+  padding-left: 13%;
+}
+
+@media (max-width: 600px) {
+  .footerText {
+    //  width: "70%", textAlign: "justify"
+    width: 90%;
+    text-align: justify;
+  }
+}
+
+@media (width: 768px) {
+  .footerText {
+    //  width: "70%", textAlign: "justify"
+    width: 100%;
+    text-align: justify;
+  }
+  .footerLeft {
+    padding-left: 15%;
+  }
+}
+
+@media (max-width: 500px) {
+  .footerLeft {
+    padding-left: 6%;
+  }
+}

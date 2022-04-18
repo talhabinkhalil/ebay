@@ -1,13 +1,14 @@
 import React from "react";
+import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="row">
         <div className="col-md-6 col-lg-6 col-12">
-          <div className="col-md-10 col-lg-10 col-12">
+          <div className="col-md-10 col-lg-10 col-12 footerLeft">
             <h3>Uber Das Project</h3>
-            <p style={{ width: "70%", textAlign: "justify" }}>
+            <p className="footerText">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exerc

@@ -22,7 +22,7 @@ $heroColor: #bee4fc;
 }
 .heroContent {
   background-color: $heroColor;
-  height: 300px;
+  height: auto;
   border-radius: 30px;
 }
 
@@ -32,6 +32,8 @@ $heroColor: #bee4fc;
   align-items: center;
   flex-direction: column;
   height: 300px !important;
+  margin-left: 14%;
+  width: 70%;
 }
 .smallText {
   color: $color;
@@ -47,6 +49,7 @@ $heroColor: #bee4fc;
 
 .btntext {
   color: $heroColor;
+  padding: 8px;
 }
 
 .img {
@@ -82,8 +85,21 @@ $heroColor: #bee4fc;
   }
 }
 
-@media (width: 2560px) {
+@media (min-width: 1450px) {
   .img {
-    width: 61%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heroContent {
+    border-radius: 0px;
+  }
+  .sideContent {
+    height: auto !important;
+    margin: 15% 0% 15% 15%;
+  }
+  .heroHeading {
+    width: 210%;
   }
 }

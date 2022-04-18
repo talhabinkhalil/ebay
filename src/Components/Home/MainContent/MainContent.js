@@ -2,15 +2,18 @@ import React from "react";
 import "./MainContent.scss";
 import Awo from "../../../assets/images/awo.png";
 import ContentImage from "../../../assets/images/contentImage.png";
+import useIsMobileScreen from "../../../hooks/useCheckDevice";
+import RightTwo from "./RightTwo";
 const MainContent = () => {
+  const isMobile = useIsMobileScreen();
   return (
     <div className="container mainWrapper">
       <div className="row">
         <div className="col-lg-6 col-md-12 col-12">
           <div className="leftOne">
             <div className="headingWrapper">
-              <h1 className="heading">
-                Neque porro quisquam est qui dolorem ipsum quia
+              <h1 className="headings">
+                Neque porro est qui dolorem ipsum quia
               </h1>
             </div>
             <div className="textWrapper">
@@ -34,7 +37,13 @@ const MainContent = () => {
             <div className="imageWrapper">
               <img src={Awo} />
             </div>
+            {isMobile && <RightTwo />}
           </div>
+          {isMobile && (
+            <div className="contentImg">
+              <img src={ContentImage} className="contentImage" />
+            </div>
+          )}
           <div className="leftTwo">
             <div className="headingTwo">
               <h1>
@@ -47,24 +56,12 @@ const MainContent = () => {
           </div>
         </div>
         <div className="col-lg-6 col-md-12 col-12">
-          <div className="contentImg">
-            <img src={ContentImage} className="contentImage" />
-          </div>
-          <div>
-            <div className="rightTwo">
-              <div className="headingWrapper">
-                <h1 className="heading">Headline Spendenbruke</h1>
-                <div className="rightTwoTexts">
-                  <p>Text text</p>
-                  <p>mehr anzeigien</p>
-                </div>
-              </div>
-              <div className="textWrapper">
-                <h5>LoremIpsumissimply</h5>
-                <br />
-              </div>
+          {!isMobile && (
+            <div className="contentImg">
+              <img src={ContentImage} className="contentImage" />
             </div>
-          </div>
+          )}
+          <div>{!isMobile && <RightTwo />}</div>
         </div>
       </div>
     </div>

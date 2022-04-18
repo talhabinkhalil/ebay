@@ -11,9 +11,18 @@ import {
 } from "react-bootstrap";
 import Menu from "../../../assets/images/menu.png";
 import useIsMobileScreen from "../../../hooks/useCheckDevice";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
   const isMobile = useIsMobileScreen();
+
+  const changeToEnglish = () => {
+    i18n.changeLanguage("en");
+  };
+  const changeToGerman = () => {
+    i18n.changeLanguage("de");
+  };
   return (
     <div fluid className="headerContainer">
       <div className="headerRow">
@@ -22,8 +31,10 @@ const Header = () => {
         </div>
         {!isMobile && (
           <div className="headerLinks">
-            <h3 className="linkColors">Spendlist</h3>
-            <h3 className="linkColors">FAQ</h3>
+            <h3 className="linkColors">{t("header.firstText")}</h3>
+            <h3 className="linkColors">{t("header.secondText")}</h3>
+            <button onClick={changeToEnglish}>En</button>
+            <button onClick={changeToGerman}>De</button>
           </div>
         )}
         {isMobile && (

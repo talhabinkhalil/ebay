@@ -31,7 +31,7 @@
 
 @media (max-width: 600px) {
   .homeContainerTwo {
-    // margin: 0px -12px;
+    margin: 0px 0px;
   }
   .containers {
     // width: 116% !important;
@@ -40,5 +40,15 @@
     // margin: 0 -19px;
     border-radius: 0px;
     padding: 50px;
+  }
+  .homeContainer {
+    margin: 0 0;
+  }
+  .homePageButton {
+    margin-top: 4%;
+    margin-bottom: 7%;
+  }
+  .buttonHome {
+    margin-right: 4%;
   }
 }

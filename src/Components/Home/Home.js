@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../SharedComponents/Header/Header";
 import Category from "./Categories/Category";
-import Footer from "./Footer/Footer";
+import Footer from "../SharedComponents/Footer/Footer";
 import Hero from "./Hero/Hero";
 import "./Home.scss";
 import MainContent from "./MainContent/MainContent";
@@ -35,8 +35,8 @@ const Home = () => {
   ];
   return (
     <>
+      <Header />
       <div className="homeContainer">
-        <Header />
         <Hero />
         <div className="container-fluid cards">
           <div className="row">

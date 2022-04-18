@@ -1,0 +1,36 @@
+{
+  "header": {
+    "firstText": "Spenden",
+    "secondText": "FAQ"
+  },
+  "Home": {
+    "hero": {
+      "heading": "Diene Spende Fur Ukrain Innen",
+      "text": "Spende Von Zuhan Order ebay",
+      "button": "Jetzet Spendin"
+    },
+    "homeButton": "Zur Splendis",
+    "mainContent": {
+      "firstHeading": "Naque Porro est qio dolerem ipsum quia",
+      "paraOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu fermentum purus. Aenean purus nisl, porta in posuere a, venenatis vel tellus. Aenean at nulla nisi. Ut ac nulla semper, mattis augue eu, varius est. Maecenas augue lectus, lacinia in commodo a, dictum eget tellus. Praesent ornare iaculis magna sit amet molestie. Integer tempus felis eu dolor tincidunt finibus. Ut auctor vestibulum mauris id ultrices. Quisque rutrum tincidunt nisl vitae ultrices. Suspendisse tellus lectus, ullamcorper ut mollis vel, vehicula nec odio.",
+      "paraTwo": "Sed ultrices tincidunt lectus vel accumsan. Aliquam lacinia felis et posuere vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque venenatis urna eget auctor faucibus. Maecenas non ipsum libero. Pellentesque in finibus purus. Phasellus ornare ligula turpis, id imperdiet mi condimentum vel. Aenean pretium iaculis dolor eget maximus. Pellentesque quis nisi nec nisi maximus congue.",
+      "firstLink": "mehr anzeigen",
+      "secondHeading": "HabenSie noch Fragen rund um das Projekt oder lhre Spende",
+      "secondButton": "Haufig gestelte Fragen",
+      "thirdHeading": "Headline Spendenbrucke",
+      "thirdText": "Text text",
+      "thirdLink": "mehr anzeigen",
+      "footertext": "SPENDENBRUCKE UKRAIN"
+    }
+  },
+  "footer": {
+    "firstHeading": "Uber das Projekt",
+    "firstText": "Lorem ipsum dolor sit amet, sonsetetur sadisocing aliter sed diam nonuny eirmod tempor invidunt ut.AWO and Spenderbruke",
+    "secondHeading": "Hilf & Konakt",
+    "FAQ": "FAQ",
+    "thirdHeading": "Rechtliches",
+    "AGB": "AGB",
+    "Datenschutz": "Datenschutz",
+    "impressum": "Impressum"
+  }
+}
